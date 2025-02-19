@@ -10,6 +10,7 @@ public class EntradaDeDados {
 	    	
 	    	System.out.println ("Qual o usuario");
 	    	
+	    	
 	    	n = sc.next();
 	    	
 	    	System.out.println (n);
