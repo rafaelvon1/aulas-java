@@ -15,8 +15,8 @@ public class Desafios{
     	double fahrenheit = (temp * 9/5) + 32;
     	double Kelvin = temp + 273.15;
     	
-    	System.out.println("Calor pra porra, em fahrenheit é igual a: "+ fahrenheit);
-    	System.out.println("Calor pra porra, em Kelvin é igual a: "+ Kelvin);
+    	System.out.println("Calor pra dedeu, em fahrenheit é igual a: "+ fahrenheit);
+    	System.out.println("Calor pra dedeu, em Kelvin é igual a: "+ Kelvin);
     	
     	
     	

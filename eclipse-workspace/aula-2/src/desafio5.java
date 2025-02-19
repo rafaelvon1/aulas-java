@@ -14,7 +14,7 @@ public class desafio5 {
 		
 		double p = 2 * Math.PI * r ;
 		
-		String.format("%.2f", a);
+		m2 = String.format("%.2f", a);
 		
 		System.out.println("A Área deste circulo é: " + a);
 		

@@ -14,7 +14,7 @@ public class desafio4 {
 
     	double Juros = CapitalInicial * Taxa *Tempo;
     	
-    	System.out.println("montant final de:" + Juros);
+    	System.out.println("juros:" + Juros);
 	}
 
 }

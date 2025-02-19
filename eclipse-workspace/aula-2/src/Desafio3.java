@@ -1,4 +1,3 @@
-import java.util.Iterator;
 import java.util.Scanner;
 public class Desafio3 {
 
@@ -6,10 +5,6 @@ public class Desafio3 {
 		
 		
 		Scanner sc =  new Scanner(System.in);
-		
-		for (int cont = 10; cont < args.length; cont++) {
-			
-		}
 		
     	System.out.println("Qual a nota do primeiro aluno?: ");
     	double n1 = sc.nextDouble ();
