@@ -8,22 +8,27 @@ public class Repeticao {
 		
 		Scanner sc = new Scanner(System.in);
 		
+		System.out.println("Roleta Russa");
+		
 		
 		int valor;
 		int aleatorio = (int) (Math.random() * 10);
 		
 		do {
-			System.out.println("que numero estou pensando??---");
+			System.out.println("Em qual tambor escondi a bala?--- ");
 			valor = sc.nextInt();
 			if (aleatorio > valor) {
-				System.out.println("O numero que pensei é maior que " + valor);
+				System.out.println("Não esta ai em " + valor);
 				
 			}if (aleatorio < valor) {
-				System.out.println("O numero que pensei é menor que " + valor);
+				System.out.println("Errou hehehe não está no " + valor);
+			}
+			else {
+				System.out.println("hmmmmmm");
 			}
 		} while (aleatorio != valor);
 		
-		System.out.println("Congratulation");
+		System.out.println("Pow💀");
 		
 		
 		//System.out.println(aleatorio);
