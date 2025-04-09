@@ -35,7 +35,13 @@ public class ContaBancaria {
             System.out.println("nao valido");
         }
     }
-
+    public void Sacar(double saque){
+        if (saque > 0 && saque <= this.saldo) {
+            this.saldo -= saque;
+        } else {
+            System.out.println("bixo vai da nao");
+        }
+    }
 
 
 
