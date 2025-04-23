@@ -1,4 +1,4 @@
-public class carro extends Veiculos{
+public class carro extends Veiculos implements contrato{
     private boolean arCondicionado;
 
     
@@ -6,7 +6,17 @@ public class carro extends Veiculos{
         super(marca,modelo,ano,valorDiario);
         this.arCondicionado = arCondicionado;
     }
-
+    
+    public double calcularAlugar(int dias){
+        double valorAluguel;
+        if (arCondicionado) {
+            valorAluguel = getValorDiario() * dias * 1.5;
+        }
+        else{
+            valorAluguel = getValorDiario() * dias;
+        }
+        return valorAluguel;
+    }
 
     @Override
     public String toString() {

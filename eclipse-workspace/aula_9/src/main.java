@@ -5,5 +5,6 @@ public class main{
         System.out.println(civic.toString());
         moto motoca = new moto("motoca","motomoto",1702,1000.0,1);
         System.out.println(motoca.toString());
+        System.out.println(civic.calcularAlugar(5));
     }
 }
