@@ -4,5 +4,10 @@ public class moto extends Veiculos {
         super(marca,modelo,ano,valorDiario);
         this.cilindradas= cilindradas;
     }
+    @Override
+    public String toString() {
+        return "moto [cilindradas=" + cilindradas + ", Marca" + getMarca() + ", Modelo" + getModelo()
+                + ", Ano" + getAno() + ", ValorDiario" + getValorDiario() + "]";
+    }
     
 }

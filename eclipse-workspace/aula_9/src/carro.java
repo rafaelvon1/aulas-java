@@ -6,5 +6,16 @@ public class carro extends Veiculos{
         super(marca,modelo,ano,valorDiario);
         this.arCondicionado = arCondicionado;
     }
+
+
+    @Override
+    public String toString() {
+        return "carro [arCondicionado=" + arCondicionado + ", Marca" + getMarca() + ", Modelo" + getModelo()
+                + ", ano" + getAno() + ", ValorDiario" + getValorDiario() + "]";
+    }
+
+
+    
+    
     
 }
