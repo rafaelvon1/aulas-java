@@ -5,7 +5,6 @@ import java.awt.Font;
 import java.awt.GridBagLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
 import javax.swing.BorderFactory;
 import javax.swing.Box;
 import javax.swing.BoxLayout;
@@ -17,7 +16,6 @@ import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 import javax.swing.SwingUtilities;
-
 import com.example.index;
 
 public class TelaCadastro extends JFrame {
@@ -56,9 +54,7 @@ public class TelaCadastro extends JFrame {
         estilizarLabel(labelSenha);
         JPasswordField textSenha = new JPasswordField(20);
 
-        JLabel labelConfirmarSenha = new JLabel("Confirme a Senha:");
-        estilizarLabel(labelConfirmarSenha);
-        JPasswordField textConfirmarSenha = new JPasswordField(20);
+        
 
         // Botões
         JButton btnCadastrar = new JButton("Cadastrar");
@@ -70,9 +66,9 @@ public class TelaCadastro extends JFrame {
                 String nome = textNome.getText().toLowerCase();
                 String email = textEmail.getText().toLowerCase();
                 String senha = new String(textSenha.getPassword());
-                String Confirmarsenha = new String(textConfirmarSenha.getPassword());
                 
-                if (nome.isEmpty() || email.isEmpty() || senha.isEmpty() || Confirmarsenha.isEmpty()) {
+                
+                if (nome.isEmpty() || email.isEmpty() || senha.isEmpty()) {
                     JOptionPane.showMessageDialog(null, "Preencha todos os campos!", "Erro", JOptionPane.ERROR_MESSAGE);
                     
                 }
@@ -95,9 +91,6 @@ public class TelaCadastro extends JFrame {
         panel.add(Box.createVerticalStrut(10));
         panel.add(labelSenha);
         panel.add(textSenha);
-        panel.add(Box.createVerticalStrut(20));
-        panel.add(labelConfirmarSenha);
-        panel.add(textConfirmarSenha);
         panel.add(Box.createVerticalStrut(20));
         panel.add(btnCadastrar);
 

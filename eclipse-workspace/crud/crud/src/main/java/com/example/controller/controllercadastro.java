@@ -3,6 +3,6 @@ import com.example.model.model;
 public class controllercadastro {
     public void InserirDados(String nome,String email, String senha){
         model model = new model();
-        
+        model.inserir(nome,email,senha);
     }
 }
